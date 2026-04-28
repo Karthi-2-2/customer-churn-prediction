@@ -1,54 +1,61 @@
-# customer-churn-prediction
-Customer churn prediction using Deep Learning (TensorFlow) with preprocessing and model evaluation
-📌 Overview
-This project predicts customer churn using a Deep Learning model built with TensorFlow/Keras.
-It helps businesses identify customers likely to leave and take proactive retention actions.
-🎯 Objective
-Predict customer churn (Yes/No)
-Identify key factors affecting churn
-Improve customer retention strategies
-📂 Dataset
-Telco Customer Churn Dataset
-~7,000 customer records
-Target variable: Churn (0 = No, 1 = Yes)
-🛠️ Technologies Used
-Python
-Pandas, NumPy
-Scikit-learn
-TensorFlow / Keras
-⚙️ Workflow
-Data Cleaning
-Encoding categorical variables
-Feature scaling
-Train-test split
-Neural Network model building
-Model evaluation
-🧠 Model Architecture
-Dense (128, ReLU)
-Dropout (0.3)
-Dense (64, ReLU)
-Dropout (0.2)
-Output (Sigmoid)
-📊 Model Performance
-Training Accuracy: ~81%
-Validation Accuracy: ~81%
-Test Accuracy: 80.19%
-🔍 Key Insights
-Customers with short tenure are more likely to churn
-Higher monthly charges increase churn probability
-Contract type plays a major role in retention
-▶️ How to Run
-pip install -r requirements.txt
-python churn_model.py
-📁 Project Structure
-customer-churn-prediction/
-│── data/
-│── churn_model.py
-│── requirements.txt
-│── README.md
-🚀 Future Improvements
-Hyperparameter tuning
-Improve model performance
-Deploy using Streamlit
-🙌 Author
-Karthikeyan
+# 🚀 Customer Churn Prediction
+
+## 📌 Overview
+This project predicts customer churn using Deep Learning techniques.  
+The model is built using TensorFlow/Keras and trained on a telecom dataset to classify whether a customer will churn or not.
+
+---
+
+## 📊 Dataset
+- Dataset: Telco Customer Churn Dataset  
+- Records: ~7,000 customers  
+- Target Variable: `Churn` (0 = No, 1 = Yes)
+
+---
+
+## ⚙️ Technologies Used
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- TensorFlow / Keras  
+
+---
+
+## 🔧 Data Preprocessing
+- Removed unnecessary columns (`customerID`)  
+- Encoded categorical features using Label Encoding  
+- Feature scaling using StandardScaler  
+- Train-test split (80/20)
+
+---
+
+## 🤖 Model Architecture
+- Input Layer  
+- Dense Layer (128 neurons, ReLU)  
+- Dropout (0.3)  
+- Dense Layer (64 neurons, ReLU)  
+- Dropout (0.2)  
+- Output Layer (Sigmoid)
+
+---
+
+## 📈 Model Training
+- Optimizer: Adam  
+- Loss Function: Binary Crossentropy  
+- Epochs: 20  
+- Batch Size: 32  
+
+---
+
+## 📊 Results
+- Test Accuracy: **~80%**  
+- Model shows good performance in predicting customer churn.
+---
+
+## 📌 Conclusion
+This project demonstrates how deep learning can be used to predict customer churn and help businesses take proactive retention strategies.
+
+---
+
+## 👤 Author
+Karthikeyan G
